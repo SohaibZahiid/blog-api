@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "6400a8b2d745ef3c17ba8079",
+        "title": "My first post",
+        "desc": "Hello world!",
+        "img": "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "cat": "Art",
+        "date": "2023-03-02T13:46:22.236Z",
+        "author": "6400a844537ff7d83b5a7c95",
+        "__v": 0
+    },
+    {
+        "_id": "6400a9e3deacd2209b2824d7",
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
+        "img": "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "cat": "Technology",
+        "date": "2023-03-02T13:51:28.646Z",
+        "author": "6400a844537ff7d83b5a7c95",
+        "__v": 0
+    }
+]

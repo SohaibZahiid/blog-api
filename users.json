@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "6400a844537ff7d83b5a7c95",
+        "username": "u1",
+        "email": "u1@gmail.com",
+        "password": "u1",
+        "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "posts": [
+            "6400a8b2d745ef3c17ba8079",
+            "6400a9e3deacd2209b2824d7"
+        ],
+        "__v": 2
+    },
+    {
+        "_id": "6400aa40deacd2209b2824da",
+        "username": "sohaib",
+        "email": "sohaib@gmail.com",
+        "password": "sohaib",
+        "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "posts": [],
+        "__v": 0
+    }
+]
