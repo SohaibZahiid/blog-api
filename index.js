@@ -49,19 +49,21 @@ const authRoutes = require("./src/routes/Auth.route");
 //     next();
 // });
 app.use(
-    cors({
-        origin: [
-            "https://blog-angular-nodejs.netlify.app",
-            "http://localhost:4200",
-        ],
-        credentials: true,
-    })
+  cors({
+    origin: [
+      "https://blog-angular-nodejs.netlify.app",
+      "http://localhost:4200",
+    ],
+    credentials: true,
+  })
 );
+
+app.use(cors({ origin: true, credentials: true }));
 
 //MIDDLEWARE
 app.use(express.json({ limit: "5mb", extended: true }));
 app.use(
-    express.urlencoded({ limit: "5mb", extended: true, parameterLimit: 50000 })
+  express.urlencoded({ limit: "5mb", extended: true, parameterLimit: 50000 })
 );
 app.use(express.text({ limit: "5mb" }));
 app.use(cookieParser());
@@ -78,14 +80,14 @@ app.use(errorHandler);
 const port = process.env.PORT || 5000;
 
 const start = async () => {
-    try {
-        await connectDB(process.env.MONGO_URI);
-        app.listen(port, () => {
-            console.log(`Server running on port ${port}`);
-        });
-    } catch (error) {
-        console.log(error);
-    }
+  try {
+    await connectDB(process.env.MONGO_URI);
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 start();
