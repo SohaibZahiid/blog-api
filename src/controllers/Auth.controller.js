@@ -22,7 +22,13 @@ const login = async (req, res) => {
 
   const { password, ...rest } = user.toObject();
 
-  res.cookie("access_token", token).status(200).json(rest);
+  res
+    .cookie("access_token", token, {
+      httpOnly: true,
+      secure: false,
+    })
+    .status(200)
+    .json(rest);
 };
 
 const logout = (req, res) => {
