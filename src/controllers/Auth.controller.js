@@ -27,6 +27,8 @@ const login = async (req, res) => {
       httpOnly: true,
       secure: true,
       domain: "blog-angular-nodejs.netlify.app",
+      path: "/",
+      expires: new Date(Date.now() + 3600000),
     })
     .status(200)
     .json(rest);
