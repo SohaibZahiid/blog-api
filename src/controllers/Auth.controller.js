@@ -26,6 +26,7 @@ const login = async (req, res) => {
     .cookie("access_token", token, {
       httpOnly: true,
       secure: true,
+      domain: "blog-angular-nodejs.netlify.app",
     })
     .status(200)
     .json(rest);
