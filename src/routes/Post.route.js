@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 const {
-    getPosts,
-    getSinglePost,
-    deletePost,
-    createPost,
-    updatePost,
+  getPosts,
+  getSinglePost,
+  deletePost,
+  createPost,
+  updatePost,
 } = require("../controllers/Post.controller");
 
 router.get("/", getPosts);
