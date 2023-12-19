@@ -56,7 +56,6 @@ const deletePost = async (req, res) => {
 
 const createPost = (req, res) => {
   const token = req.cookies.access_token;
-  console.log(JSON.stringify(req.cookies));
   if (!token) {
     return res.status(401).json("You are not authorized");
   }
