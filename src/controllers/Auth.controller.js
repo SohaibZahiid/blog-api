@@ -24,7 +24,10 @@ const login = async (req, res) => {
 
   res
     .cookie("access_token", token, {
-      Credential: true,
+      sameSite: "none",
+      secure: true,
+      domain: "blog-angular-nodejs.netlify.app/",
+      httpOnly: true,
       secure: true,
       sameSite: false,
     })
