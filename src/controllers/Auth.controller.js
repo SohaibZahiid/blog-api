@@ -24,7 +24,7 @@ const login = async (req, res) => {
 
   res
     .cookie("access_token", token, {
-      path: "/",
+      Credential: true,
       secure: true,
       sameSite: false,
     })
